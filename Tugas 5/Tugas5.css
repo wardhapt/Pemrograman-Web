@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef0ff;
+    color: #25254a;
+}
+
+.container {
+    width: 90%;
+    max-width: 650px;
+    margin: 70px auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 65px;
+    height: 65px;
+    background: #cf7aaf;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #777;
+}
+
+.search-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #cf7aaf;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #f12584;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cf7aaf;
+}
+
+#loading {
+    margin: 25px;
+    color: #635bdb;
+}
+
+#pesan {
+    margin: 25px;
+    color: #d33;
+}
+
+#profil {
+    margin-top: 25px;
+}
+
+.profile-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+#avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #dedcff;
+}
+
+.profile-info h2 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+#login {
+    color: #cf7aaf;
+    margin: 8px;
+}
+
+#bio {
+    color: #777;
+    margin: 12px 0 22px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f3ff;
+    padding: 18px 8px;
+    border-radius: 10px;
+    margin-bottom: 22px;
+    gap: 5px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.stats strong {
+    font-size: 21px;
+    color: #635bdb;
+}
+
+.stats span {
+    font-size: 12px;
+    color: #777;
+}
+
+#link {
+    display: inline-block;
+    text-decoration: none;
+    background: #cf7aaf;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
+#link:hover {
+    background: #cf7aaf;
+}
+
+footer {
+    margin-top: 35px;
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 450px) {
+    form {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
