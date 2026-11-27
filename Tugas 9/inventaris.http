@@ -1,0 +1,19 @@
+### GET semua
+GET http://localhost:8787/api/inventaris
+
+### GET detail
+GET http://localhost:8787/api/inventaris/1
+
+### GET tidak ada (uji 404)
+GET http://localhost:8787/api/inventaris/99
+
+### POST tambah
+POST http://localhost:8787/api/inventaris
+Content-Type: application/json
+
+{
+  "nama": "Access Point",
+  "kategori": "router",
+  "jumlah": 1,
+  "kondisi": "baik"
+}
